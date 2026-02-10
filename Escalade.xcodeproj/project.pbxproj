@@ -1260,6 +1260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1490,7 +1491,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		76A8E5C120A32D75006C7414 /* Update Build Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1532,7 +1533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" bd7b3862615dec5dfe2c5493910bfde79e848c11 58e2255aac4d67452b1e88c732ff7de6fc3b25b6ad4c7fe000023da21de13adb";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" bd7b3862615dec5dfe2c5493910bfde79e848c11 58e2255aac4d67452b1e88c732ff7de6fc3b25b6ad4c7fe000023da21de13adb\n";
 		};
 		76DDBBEF20B2F89B003AE2EF /* Upload dSYM to Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1546,7 +1547,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" bd7b3862615dec5dfe2c5493910bfde79e848c11 58e2255aac4d67452b1e88c732ff7de6fc3b25b6ad4c7fe000023da21de13adb";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" bd7b3862615dec5dfe2c5493910bfde79e848c11 58e2255aac4d67452b1e88c732ff7de6fc3b25b6ad4c7fe000023da21de13adb\n";
 		};
 		76F1104B2112FCA300C6173F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2304,6 +2305,8 @@
 				DEVELOPMENT_TEAM = LL5MM59PQ7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				EscaladeAppIdentifier = "com.simpzan.$(EscaladeProductName).iOS";
 				EscaladeProductName = DevEscalade;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2340,7 +2343,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = arm64;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -2404,7 +2407,7 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = arm64;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
@@ -2895,6 +2898,8 @@
 				DEVELOPMENT_TEAM = LL5MM59PQ7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				EscaladeAppIdentifier = "com.simpzan.$(EscaladeProductName).iOS";
 				EscaladeProductName = DevEscalade;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2931,7 +2936,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -2993,7 +2997,6 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};

@@ -1,5 +1,3 @@
-github "Quick/Nimble" "0edb48d936f31f4ce657047884b77b6e3b0bef4b"
-github "Quick/Quick" "32804c304e25d35938046e17378bde808b85b402"
 github "behrang/YamlSwift" "3.4.4"
 github "simpzan/CocoaAsyncSocket" "6532b0603a42bf41e6f7862cbcce68f19af5ec68"
 github "simpzan/CocoaLumberjack" "ad064e4ba5725c19271b3c176842ac2d987b87f7"

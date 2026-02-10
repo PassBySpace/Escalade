@@ -8,6 +8,7 @@
 
 import Foundation
 import CocoaLumberjackSwift
+import NEKit
 
 let switchProxyId = "switchProxy"
 let getServersId = "getServers"

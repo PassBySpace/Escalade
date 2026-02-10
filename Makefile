@@ -1,10 +1,11 @@
 
-CarthageBootstrap := carthage bootstrap --no-use-binaries --cache-builds --platform macos,ios
+CarthageBootstrap1 := ../carthage.sh build --no-use-binaries --cache-builds --platform iOS
+CarthageBootstrap2 := ./carthage.sh build --no-use-binaries --cache-builds --platform iOS
 TargetDeviceId := 4438efa233b40a9550b802972fdc1245484435d5
 
 bootstrap:
-	cd NEKit && $(CarthageBootstrap)
-	$(CarthageBootstrap)
+	cd NEKit && $(CarthageBootstrap1)
+	$(CarthageBootstrap2)
 	pod install
 
 openCrashDir.mac:

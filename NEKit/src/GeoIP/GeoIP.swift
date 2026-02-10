@@ -1,5 +1,6 @@
 import Foundation
 import MMDB
+import MMDB
 
 open class GeoIP {
     open static let database = MMDB()!
